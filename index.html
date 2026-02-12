@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome | SOPHIA'S Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">GC</div>
+      <div>
+        <h1>SOPHIA'S Shop</h1>
+        <p>Ladies • Men • Shoes • Perfume</p>
+      </div>
+    </div>
+    <a class="btn ghost" href="shop.html">Visit Store</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to SOPHIA'S Shop</h2>
+        <p class="muted">
+          Shop quality ladies dresses, shoes & heels, men shirts, trousers and perfumes.
+          Add to cart, then place your order via WhatsApp.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="shop.html">Start Shopping</a>
+          <a class="btn ghost" href="shop.html#categories">Browse Categories</a>
+        </div>
+
+        <div class="hero-mini">
+          <div class="mini-card">
+            <span class="k">Fast Order</span>
+            <span class="v">WhatsApp checkout</span>
+          </div>
+          <div class="mini-card">
+            <span class="k">Categories</span>
+            <span class="v">Easy shopping</span>
+          </div>
+          <div class="mini-card">
+            <span class="k">Cart</span>
+            <span class="v">Auto totals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Today’s Picks</h3>
+        <p class="muted">Fresh arrivals updated often.</p>
+        <div class="pick">
+          <div class="pill">Ladies Dress</div>
+          <div class="pick-title">Elegant Dinner Dress</div>
+          <div class="muted">Add to cart & order now</div>
+        </div>
+        <div class="pick">
+          <div class="pill">Perfume</div>
+          <div class="pick-title">Long-lasting fragrance</div>
+          <div class="muted">Great gift option</div>
+        </div>
+
+        <a class="btn" href="shop.html">Go to Shop</a>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h3>Shop by Category</h3>
+        <div class="muted">Simple and organized</div>
+      </div>
+
+      <div class="cat-grid">
+        <a class="cat" href="shop.html?cat=ladies">
+          <div class="cat-title">Ladies Dress</div>
+          <div class="muted">Gowns • Dinner • Casual</div>
+        </a>
+        <a class="cat" href="shop.html?cat=shoes">
+          <div class="cat-title">Shoes / Heels</div>
+          <div class="muted">Heels • Sneakers • Slides</div>
+        </a>
+        <a class="cat" href="shop.html?cat=mens">
+          <div class="cat-title">Men’s Shirt</div>
+          <div class="muted">Classic • Polo • Formal</div>
+        </a>
+        <a class="cat" href="shop.html?cat=trousers">
+          <div class="cat-title">Trousers</div>
+          <div class="muted">Jeans • Chinos • Office</div>
+        </a>
+        <a class="cat" href="shop.html?cat=perfume">
+          <div class="cat-title">Perfume</div>
+          <div class="muted">Men • Women • Unisex</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>SOPHIA'S Shop</h4>
+        <p class="muted">Quality fashion & fragrance.</p>
+      </div>
+      <div>
+        <h4>Order</h4>
+        <p class="muted">Add to cart → Order via WhatsApp</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p class="muted">DM for sizes & delivery</p>
+      </div>
+    </div>
+    <p class="tiny muted center">© <span id="year"></span> SOPHIA'S Shop</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin | SOPHIA'S Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">AD</div>
+      <div>
+        <h1>Admin Panel</h1>
+        <p>Upload goods • Edit • Delete</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn ghost" href="index.html">Welcome</a>
+      <a class="btn" href="shop.html">Open Shop</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h3>Add New Product</h3>
+        <div class="muted">Saved locally (no server)</div>
+      </div>
+
+      <div class="hero-card">
+        <form id="productForm">
+          <div class="row" style="gap:12px; flex-wrap:wrap;">
+            <label class="field" style="flex:1; min-width:240px;">
+              <span>Product Name</span>
+              <input required id="pTitle" placeholder="e.g. Ladies Dinner Dress" />
+            </label>
+
+            <label class="field" style="flex:1; min-width:180px;">
+              <span>Category</span>
+              <select required id="pCategory" style="width:100%; padding:11px 12px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); color:#eaf0ff; outline:none;">
+                <option value="ladies">Ladies Dress</option>
+                <option value="shoes">Shoes / Heels</option>
+                <option value="mens">Men’s Shirt</option>
+                <option value="trousers">Trousers</option>
+                <option value="perfume">Perfume</option>
+              </select>
+            </label>
+
+            <label class="field" style="flex:1; min-width:160px;">
+              <span>Price (GHS)</span>
+              <input required id="pPrice" type="number" min="1" step="1" placeholder="e.g. 150" />
+            </label>
+          </div>
+
+          <div class="row" style="gap:12px; flex-wrap:wrap;">
+            <label class="field" style="flex:1; min-width:260px;">
+              <span>Image URL (optional)</span>
+              <input id="pImageUrl" placeholder="Paste image link from Instagram/Google" />
+            </label>
+
+            <label class="field" style="flex:1; min-width:260px;">
+              <span>OR Upload Image (optional)</span>
+              <input id="pImageFile" type="file" accept="image/*" />
+              <p class="tiny muted">Tip: Upload works best for small images.</p>
+            </label>
+          </div>
+
+          <div class="row" style="justify-content:flex-end;">
+            <button class="btn" type="submit">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h3>All Products</h3>
+        <div class="muted">Manage your goods</div>
+      </div>
+
+      <div id="productList" class="grid"></div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

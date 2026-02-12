@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop | SOPHIA'S Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">GC</div>
+      <div>
+        <h1>GlowCloset</h1>
+        <p>Shop by categories • Add to cart • Order on WhatsApp</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn ghost" href="index.html">Welcome</a>
+
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Search products..." />
+      </div>
+
+      <button class="btn ghost" id="openCartBtn">
+        Cart <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="filters" id="filters">
+    <button class="chip active" data-cat="all">All</button>
+    <button class="chip" data-cat="ladies">Ladies Dress</button>
+    <button class="chip" data-cat="shoes">Shoes / Heels</button>
+    <button class="chip" data-cat="mens">Men’s Shirt</button>
+    <button class="chip" data-cat="trousers">Trousers</button>
+    <button class="chip" data-cat="perfume">Perfume</button>
+  </nav>
+
+  <main class="container">
+    <section class="section" id="store">
+      <div class="section-head">
+        <h3>Store</h3>
+        <div class="muted" id="resultInfo">Showing all items</div>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close="1"></div>
+    <div class="drawer-card">
+      <div class="drawer-head">
+        <h3>Your Cart</h3>
+        <button class="icon-btn" id="closeCartBtn">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="line">
+          <span>Total Items</span>
+          <strong id="cartItemsCount">0</strong>
+        </div>
+        <div class="line total">
+          <span>Total</span>
+          <strong id="cartTotal">GHS 0.00</strong>
+        </div>
+
+        <label class="field">
+          <span>Your name (optional)</span>
+          <input id="custName" placeholder="e.g. Emmanuel" />
+        </label>
+
+        <label class="field">
+          <span>Location (optional)</span>
+          <input id="custLocation" placeholder="e.g. Accra / Tema" />
+        </label>
+
+        <button class="btn" id="orderWhatsAppBtn">Order via WhatsApp</button>
+        <p class="tiny muted">
+          Clicking order will open WhatsApp DM with your cart summary to the admin.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="data.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
