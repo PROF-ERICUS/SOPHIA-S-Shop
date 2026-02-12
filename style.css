@@ -252,4 +252,28 @@ a{color:inherit;text-decoration:none}
 @media (max-width: 420px){
   .grid{grid-template-columns: 1fr}
   .cat-grid{grid-template-columns: 1fr}
+
+}
+
+
+@media (max-width: 980px){
+  .grid{grid-template-columns: repeat(3, 1fr)}
+  .hero{grid-template-columns: 1fr}
+  .cat-grid{grid-template-columns: repeat(2, 1fr)}
+}
+@media (max-width: 650px){
+  .grid{grid-template-columns: repeat(2, 1fr)}
+  .brand p{display:none}
+}
+@media (max-width: 420px){
+  .grid{grid-template-columns: 1fr}
+  .cat-grid{grid-template-columns: 1fr}
+}
+
+/* Better responsive topbar + search on small screens */
+@media (max-width: 650px){
+  .topbar{flex-wrap:wrap}
+  .actions{width:100%}
+  .search-wrap{flex:1; min-width:200px}
+  .search-wrap input{width:100%}
 }
