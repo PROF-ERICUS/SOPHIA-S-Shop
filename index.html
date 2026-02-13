@@ -7,65 +7,59 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header class="topbar">
     <div class="brand">
-      <div class="logo">SS</div>
-      <div>
+      <div class="logo" aria-hidden="true">SS</div>
+      <div class="brand-text">
         <h1>SOPHIA'S Shop</h1>
-        <p>Ladies • Men • Shoes • Perfume</p>
+        <p class="muted">Ladies • Men • Shoes • Perfume</p>
       </div>
     </div>
-    <a class="btn ghost" href="shop.html">Visit Store</a>
+
+    <nav class="actions">
+      
+      <a class="btn ghost" href="shop.html">Shop</a>
+      <a class="btn" href="shop.html">Start Shopping</a>
+    </nav>
   </header>
 
   <main class="container">
-    <section class="hero">
+
+    <!-- Hero -->
+    <section class="hero hero-simple">
       <div class="hero-text">
-        <h2>Welcome to SOPHIA'S Shop</h2>
+        <h2>Shop quality fashion & fragrance—fast.</h2>
         <p class="muted">
-          Shop quality ladies dresses, shoes & heels, men shirts, trousers and perfumes.
-          Add to cart, then place your order via WhatsApp.
+          Browse categories, add items to cart, then place your order instantly via WhatsApp.
         </p>
 
         <div class="hero-cta">
-          <a class="btn" href="shop.html">Start Shopping</a>
-          <a class="btn ghost" href="shop.html#categories">Browse Categories</a>
+          <a class="btn" href="shop.html">Visit Store</a>
+          <a class="btn ghost" href="#categories">Browse Categories</a>
         </div>
 
-        <div class="hero-mini">
-          <div class="mini-card">
-            <span class="k">Fast Order</span>
-            <span class="v">WhatsApp checkout</span>
-          </div>
-          <div class="mini-card">
-            <span class="k">Categories</span>
-            <span class="v">Easy shopping</span>
-          </div>
-          <div class="mini-card">
-            <span class="k">Cart</span>
-            <span class="v">Auto totals</span>
-          </div>
+        <div class="hero-badges">
+          <span class="pill">WhatsApp Ordering</span>
+          <span class="pill">Cart totals</span>
+          <span class="pill">Easy categories</span>
         </div>
       </div>
 
-      <div class="hero-card">
-        <h3>Today’s Picks</h3>
-        <p class="muted">Fresh arrivals updated often.</p>
-        <div class="pick">
-          <div class="pill">Ladies Dress</div>
-          <div class="pick-title">Elegant Dinner Dress</div>
-          <div class="muted">Add to cart & order now</div>
-        </div>
-        <div class="pick">
-          <div class="pill">Perfume</div>
-          <div class="pick-title">Long-lasting fragrance</div>
-          <div class="muted">Great gift option</div>
-        </div>
-
-        <a class="btn" href="shop.html">Go to Shop</a>
+      <div class="hero-card hero-card-simple">
+        <h3>How it works</h3>
+        <ol class="steps">
+          <li>Select items from the store</li>
+          <li>Add to cart (auto totals)</li>
+          <li>Click “Order via WhatsApp”</li>
+        </ol>
+        <a class="btn" href="shop.html">Open Shop</a>
+        <p class="tiny muted" style="margin:10px 0 0;">Need sizes? DM us on WhatsApp.</p>
       </div>
     </section>
 
+    <!-- Categories -->
     <section class="section" id="categories">
       <div class="section-head">
         <h3>Shop by Category</h3>
@@ -77,26 +71,32 @@
           <div class="cat-title">Ladies Dress</div>
           <div class="muted">Gowns • Dinner • Casual</div>
         </a>
+
         <a class="cat" href="shop.html?cat=shoes">
           <div class="cat-title">Shoes / Heels</div>
           <div class="muted">Heels • Sneakers • Slides</div>
         </a>
+
         <a class="cat" href="shop.html?cat=mens">
           <div class="cat-title">Men’s Shirt</div>
           <div class="muted">Classic • Polo • Formal</div>
         </a>
+
         <a class="cat" href="shop.html?cat=trousers">
           <div class="cat-title">Trousers</div>
           <div class="muted">Jeans • Chinos • Office</div>
         </a>
+
         <a class="cat" href="shop.html?cat=perfume">
           <div class="cat-title">Perfume</div>
           <div class="muted">Men • Women • Unisex</div>
         </a>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
@@ -119,5 +119,4 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
