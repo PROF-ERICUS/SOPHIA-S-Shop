@@ -535,20 +535,4 @@ html, body{max-width:100%; overflow-x:hidden}
 }
 .sizeSel option{color:#000;}
 
-.brand-text{display:flex;flex-direction:column}
-.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-
-.hero-simple{align-items:stretch}
-.hero-card-simple{display:flex;flex-direction:column;gap:10px}
-.steps{margin:8px 0 0;padding-left:18px;color:rgba(234,240,255,.85)}
-.steps li{margin:6px 0}
-.hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-
-/* Better header on small screens */
-@media (max-width: 650px){
-  .topbar{flex-wrap:wrap}
-  .actions{width:100%;justify-content:flex-start}
-  .btn{width:auto}
-}
-
 
